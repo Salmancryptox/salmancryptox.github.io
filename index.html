@@ -1,24 +1,267 @@
-┌──────────────────────────────────────────────┐
-│  SALMANCRYPTOX       Home  Ideas  Discussions│
-├──────────────────────────────────────────────┤
-│                                              │
-│       BUSINESS IDEAS LAB                     │
-│                                              │
-│   Explore, analyze and develop new           │
-│   business ideas.                            │
-│                                              │
-│       [ Explore Ideas ]                      │
-│                                              │
-├──────────────────────────────────────────────┤
-│                                              │
-│  💡 Business Ideas                           │
-│                                              │
-│  ┌────────────┐ ┌────────────┐              │
-│  │ Idea #1    │ │ Idea #2    │              │
-│  │ Coming soon│ │ Coming soon│              │
-│  └────────────┘ └────────────┘              │
-│                                              │
-├──────────────────────────────────────────────┤
-│  About the Project                           │
-│  We explore and test new business ideas.     │
-└──────────────────────────────────────────────┘
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SALMANCRYPTOX — Business Ideas Lab</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      margin-left: 22px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 70px auto 30px;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin: 0 0 18px;
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      font-size: 19px;
+      line-height: 1.6;
+      color: #596579;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .section-description {
+      color: #667085;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .ideas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e3e7ef;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #667085;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      background: #eef4ff;
+      color: #2563eb;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .about {
+      background: white;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #667085;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .ideas {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">SALMANCRYPTOX</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#discussions">Discussions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <h1>BUSINESS IDEAS LAB</h1>
+
+      <p>
+        Explore, analyze and develop new business ideas.
+        A place to discover opportunities, test concepts and build something useful.
+      </p>
+
+      <a class="button" href="#ideas">Explore Ideas</a>
+    </section>
+
+    <section id="ideas">
+      <h2 class="section-title">💡 Business Ideas</h2>
+
+      <p class="section-description">
+        Ideas we're exploring and developing.
+      </p>
+
+      <div class="ideas">
+
+        <div class="card">
+          <span class="badge">IDEA #1</span>
+          <h3>Coming Soon</h3>
+          <p>
+            A new business concept will be explored here.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">IDEA #2</span>
+          <h3>Coming Soon</h3>
+          <p>
+            Another business concept will be analyzed here.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="about">
+      <section id="discussions">
+        <h2 class="section-title">💬 Discussions</h2>
+
+        <p class="section-description">
+          A space for discussing business ideas, opportunities and experiments.
+        </p>
+      </section>
+    </div>
+
+    <section>
+      <h2 class="section-title">About the Project</h2>
+
+      <p class="section-description">
+        We explore and test new business ideas.
+        The goal is to turn interesting concepts into practical projects.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 SALMANCRYPTOX — Business Ideas Lab
+  </footer>
+
+</body>
+</html>
